@@ -1,0 +1,17 @@
+//Despues de haber echo el o los models, debemos asegurarnos que nuestra app se encuentre en la apps instaladas de 
+	settings.py en el proyecto.
+
+//Para crear la(s) tabla(s) en "CMD" dentro del proyecto ejecutamos el siguiente comando
+
+python manage.py makemigrations
+
+//Esto nos creara un documento dentro de la carpeta migrations de la app "Normalmente se nombrará "0001_initial.py"
+	si es la primera vez que ejecutamos el comando.
+
+//Para guardar los cambios ejecutamos el siguiente comando en la consola
+
+python manage.py sqlmigrate "nombre de la app sin las comillas" 0001	(por el documento que mencionamos anteriormente)
+
+//Esto hará que los cambios se vean reflejados en la db del proyecto y por ultimo ejecutamos
+
+python manage.py migrate

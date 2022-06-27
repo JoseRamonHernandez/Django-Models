@@ -1,0 +1,13 @@
+<head>
+    <title>Series</title>
+</head>
+<body>
+<h1>Series en la BD</h1>
+<ul class="serie-list">
+    {% for serie in serie%}
+        <li>
+            <h2>name: {{serie.id}}.{{serie.serie_name}}</h2>
+        </li>
+    {% endfor %}
+</ul>
+</body>
